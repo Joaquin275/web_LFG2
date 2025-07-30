@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="La Familia Gastro S.L. - Comidas preparadas frescas con tecnología y tradición. Empresa gallega especializada en soluciones gastronómicas para empresas, retail y hostelería.">
+    <meta name="keywords" content="comidas preparadas, gastronomía gallega, foodservice, catering, hostelería">
+    <meta name="author" content="La Familia Gastro S.L.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lafamiliagastro.com/">
+    <meta property="og:title" content="La Familia Gastro S.L. - Gastronomía Gallega">
+    <meta property="og:description" content="Comidas preparadas frescas con tecnología y tradición. Soluciones gastronómicas para empresas, retail y hostelería.">
+    <meta property="og:image" content="./images/logo.flg.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lafamiliagastro.com/">
+    <meta property="twitter:title" content="La Familia Gastro S.L. - Gastronomía Gallega">
+    <meta property="twitter:description" content="Comidas preparadas frescas con tecnología y tradición.">
+    <meta property="twitter:image" content="./images/logo.flg.png">
+    
+    <title>La Familia Gastro S.L. - Gastronomía Gallega</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./CSS/styles.css" as="style">
+    <link rel="preload" href="./images/Imagen1-removebg-preview.png" as="image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/wa.css">
+    
+    <!-- External libraries with integrity checks -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" integrity="sha384-..." crossorigin="anonymous">
+    
+    <meta name="theme-color" content="#b71c1c">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Navegación principal">
+            <div class="nav__logo">
+                <a href="#hero" aria-label="Ir al inicio">
+                    <img class="nav__logo-img" src="./images/Imagen1-removebg-preview.png" alt="La Familia Gastro S.L. Logo" width="60" height="60">
+                </a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="nav__menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <ul class="nav__links" id="nav-links" role="menubar">
+                <li class="nav__item" role="none">
+                    <button class="nav__close" id="menu-close" aria-label="Cerrar menú" aria-hidden="true">&times;</button>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#hero" class="nav__link" role="menuitem">Inicio</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" role="none">
+                    <button class="nav__link nav__link--dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Quiénes Somos <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <ul class="nav__dropdown" role="menu">
+                        <li role="none"><a href="#about" class="nav__dropdown-link" role="menuitem">Quiénes somos</a></li>
+                        <li role="none"><a href="./galeria.html" class="nav__dropdown-link" role="menuitem">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#footer" class="nav__link" role="menuitem">Contacto</a>
+                </li>
+                <li class="nav__item nav__item--dropdown" role="none">
+                    <button class="nav__link nav__link--dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Idioma <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <ul class="nav__dropdown" role="menu">
+                        <li role="none"><a href="./en.html" class="nav__dropdown-link" role="menuitem">English</a></li>
+                        <li role="none"><a href="./port.html" class="nav__dropdown-link" role="menuitem">Portugués</a></li>
+                        <li role="none"><a href="./fr.html" class="nav__dropdown-link" role="menuitem">Francés</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero" role="banner">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/platos 1.jpg" alt="Platos gourmet de La Familia Gastro" loading="eager">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/platos 2.jpg" alt="Especialidades culinarias gallegas" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/platos 3.jpg" alt="Cocina tradicional gallega moderna" loading="lazy">
+                </div>
+            </div>
+            
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination" aria-label="Navegación del carrusel"></div>
+        </div>
+
+        <div class="hero__container container">
+            <h1 class="hero__title">Donde nacen los sabores que marcan diferencia</h1>
+            <p class="hero__subtitle">Comidas 100% gallegas, frescas y listas para disfrutar</p>
+            <a href="#about" class="btn btn--primary" aria-label="Descubrir más sobre nuestros servicios">
+                Descúbrelo
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <p class="section-description">
+                La Familia Gastro S.L. es una empresa gallega especializada en comidas preparadas frescas con valor añadido. 
+                Combinamos tecnología, tradición y eficiencia para atender tanto el mercado empresarial como el retail 
+                con una propuesta gastronómica de calidad.
+            </p>
+            <a href="#about" class="btn btn--secondary">Comienza ahora</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Services Section -->
+        <section id="about" class="services">
+            <div class="container">
+                <h2 class="section-title">Somos Especialistas</h2>
+                <p class="section-description">
+                    Ofrecemos soluciones gastronómicas adaptadas a diferentes sectores. Estos son nuestros principales servicios:
+                </p>
+            </div>
+
+            <!-- Temporary simple version for debugging -->
+            <div class="services-simple">
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                        <div class="service-card-3d__image">
+                            <img src="./images/white-rainforest-CVVbynP7DQ4-unsplash (1).jpg" alt="Foodservice corporativo" loading="lazy">
+                            <div class="service-card-3d__overlay"></div>
+                        </div>
+                        <div class="service-card-3d__content">
+                            <div class="service-card-3d__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card-3d__title">Foodservice Corporativo</h3>
+                            <p class="service-card-3d__description">
+                                Comidas listas para oficinas y empresas, combinando sabor, calidad y conveniencia.
+                            </p>
+                            <div class="service-card-3d__features">
+                                <span class="feature-tag">Fresco</span>
+                                <span class="feature-tag">Saludable</span>
+                                <span class="feature-tag">Rápido</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 2 -->
+                    <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                        <div class="service-card-3d__image">
+                            <img src="./images/zongnan-bao-K7gs2CSZIa4-unsplash.jpg" alt="Fabricación para supermercados" loading="lazy">
+                            <div class="service-card-3d__overlay"></div>
+                        </div>
+                        <div class="service-card-3d__content">
+                            <div class="service-card-3d__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 9H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card-3d__title">Fabricación para Supermercados</h3>
+                            <p class="service-card-3d__description">
+                                Marca propia o white label, garantizando frescura y excelencia.
+                            </p>
+                            <div class="service-card-3d__features">
+                                <span class="feature-tag">Calidad</span>
+                                <span class="feature-tag">Marca Propia</span>
+                                <span class="feature-tag">White Label</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 3 -->
+                    <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                        <div class="service-card-3d__image">
+                            <img src="./images/nima-naseri-AqAyU5YAAyQ-unsplash.jpg" alt="Gastronomía de alto nivel" loading="lazy">
+                            <div class="service-card-3d__overlay"></div>
+                        </div>
+                        <div class="service-card-3d__content">
+                            <div class="service-card-3d__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card-3d__title">Gastronomía de Alto Nivel</h3>
+                            <p class="service-card-3d__description">
+                                Platos gourmet para restaurantes y hoteles de primera línea.
+                            </p>
+                            <div class="service-card-3d__features">
+                                <span class="feature-tag">Gourmet</span>
+                                <span class="feature-tag">Premium</span>
+                                <span class="feature-tag">Exclusivo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 4 -->
+                    <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                        <div class="service-card-3d__image">
+                            <img src="./images/Exquisite Office Catering Napa County - Elevate Your Workday.jpeg" alt="Catering y eventos" loading="lazy">
+                            <div class="service-card-3d__overlay"></div>
+                        </div>
+                        <div class="service-card-3d__content">
+                            <div class="service-card-3d__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 16L12 12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card-3d__title">Catering y Eventos</h3>
+                            <p class="service-card-3d__description">
+                                Menús personalizados para celebraciones, empresas o eventos privados.
+                            </p>
+                            <div class="service-card-3d__features">
+                                <span class="feature-tag">Personalizado</span>
+                                <span class="feature-tag">Eventos</span>
+                                <span class="feature-tag">Celebraciones</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 5 -->
+                    <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                        <div class="service-card-3d__image">
+                            <img src="./images/HORECA+.jpeg" alt="Canal HORECA+" loading="lazy">
+                            <div class="service-card-3d__overlay"></div>
+                        </div>
+                        <div class="service-card-3d__content">
+                            <div class="service-card-3d__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 16L12 12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-card-3d__title">Canal HORECA+</h3>
+                            <p class="service-card-3d__description">
+                                Soluciones para hostelería moderna: agilidad, emplatado y calidad premium.
+                            </p>
+                            <div class="service-card-3d__features">
+                                <span class="feature-tag">Moderno</span>
+                                <span class="feature-tag">Ágil</span>
+                                <span class="feature-tag">Premium</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Original Swiper version (hidden for now) -->
+            <div class="services-carousel" style="display: none;">
+                <!-- Fallback for when Swiper is not available -->
+                <div class="services-fallback" style="display: none;">
+                    <div class="services-grid">
+                        <!-- Service cards will be cloned here if Swiper fails -->
+                    </div>
+                </div>
+                
+                <div class="swiper services-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Service Card 1 -->
+                        <div class="swiper-slide">
+                            <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                                <div class="service-card-3d__image">
+                                    <img src="./images/white-rainforest-CVVbynP7DQ4-unsplash (1).jpg" alt="Foodservice corporativo" loading="lazy">
+                                    <div class="service-card-3d__overlay"></div>
+                                </div>
+                                <div class="service-card-3d__content">
+                                    <div class="service-card-3d__icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="service-card-3d__title">Foodservice Corporativo</h3>
+                                    <p class="service-card-3d__description">
+                                        Comidas listas para oficinas y empresas, combinando sabor, calidad y conveniencia.
+                                    </p>
+                                    <div class="service-card-3d__features">
+                                        <span class="feature-tag">Fresco</span>
+                                        <span class="feature-tag">Saludable</span>
+                                        <span class="feature-tag">Rápido</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="swiper-slide">
+                            <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                                <div class="service-card-3d__image">
+                                    <img src="./images/zongnan-bao-K7gs2CSZIa4-unsplash.jpg" alt="Fabricación para supermercados" loading="lazy">
+                                    <div class="service-card-3d__overlay"></div>
+                                </div>
+                                <div class="service-card-3d__content">
+                                    <div class="service-card-3d__icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 9H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="service-card-3d__title">Fabricación para Supermercados</h3>
+                                    <p class="service-card-3d__description">
+                                        Marca propia o white label, garantizando frescura y excelencia.
+                                    </p>
+                                    <div class="service-card-3d__features">
+                                        <span class="feature-tag">Calidad</span>
+                                        <span class="feature-tag">Marca Propia</span>
+                                        <span class="feature-tag">White Label</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="swiper-slide">
+                            <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                                <div class="service-card-3d__image">
+                                    <img src="./images/nima-naseri-AqAyU5YAAyQ-unsplash.jpg" alt="Gastronomía de alto nivel" loading="lazy">
+                                    <div class="service-card-3d__overlay"></div>
+                                </div>
+                                <div class="service-card-3d__content">
+                                    <div class="service-card-3d__icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="service-card-3d__title">Gastronomía de Alto Nivel</h3>
+                                    <p class="service-card-3d__description">
+                                        Platos gourmet para restaurantes y hoteles de primera línea.
+                                    </p>
+                                    <div class="service-card-3d__features">
+                                        <span class="feature-tag">Gourmet</span>
+                                        <span class="feature-tag">Premium</span>
+                                        <span class="feature-tag">Exclusivo</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="swiper-slide">
+                            <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                                <div class="service-card-3d__image">
+                                    <img src="./images/Exquisite Office Catering Napa County - Elevate Your Workday.jpeg" alt="Catering y eventos" loading="lazy">
+                                    <div class="service-card-3d__overlay"></div>
+                                </div>
+                                <div class="service-card-3d__content">
+                                    <div class="service-card-3d__icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 12L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 16L12 12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="service-card-3d__title">Catering y Eventos</h3>
+                                    <p class="service-card-3d__description">
+                                        Menús personalizados para celebraciones, empresas o eventos privados.
+                                    </p>
+                                    <div class="service-card-3d__features">
+                                        <span class="feature-tag">Personalizado</span>
+                                        <span class="feature-tag">Eventos</span>
+                                        <span class="feature-tag">Celebraciones</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="swiper-slide">
+                            <article class="service-card-3d" data-tilt data-tilt-scale="1.1" data-tilt-max="15" data-tilt-speed="400">
+                                <div class="service-card-3d__image">
+                                    <img src="./images/HORECA+.jpeg" alt="Canal HORECA+" loading="lazy">
+                                    <div class="service-card-3d__overlay"></div>
+                                </div>
+                                <div class="service-card-3d__content">
+                                    <div class="service-card-3d__icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 12L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 16L12 12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="service-card-3d__title">Canal HORECA+</h3>
+                                    <p class="service-card-3d__description">
+                                        Soluciones para hostelería moderna: agilidad, emplatado y calidad premium.
+                                    </p>
+                                    <div class="service-card-3d__features">
+                                        <span class="feature-tag">Moderno</span>
+                                        <span class="feature-tag">Ágil</span>
+                                        <span class="feature-tag">Premium</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Navigation -->
+                <div class="services-carousel__navigation">
+                    <button class="services-carousel__nav services-carousel__nav--prev" aria-label="Servicio anterior">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="services-carousel__pagination"></div>
+                    <button class="services-carousel__nav services-carousel__nav--next" aria-label="Siguiente servicio">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Excellence Section -->
+        <section class="excellence">
+            <div class="excellence__container container">
+                <div class="excellence__content">
+                    <h2 class="section-title">La excelencia no es un objetivo, es nuestro estándar</h2>
+                    <p class="excellence__description">
+                        Cada detalle, cada elección y cada esfuerzo reflejan nuestro compromiso
+                        inquebrantable con la calidad. No nos conformamos con lo convencional;
+                        buscamos ir más allá, innovando y perfeccionando cada aspecto de nuestro
+                        trabajo. La excelencia no es un destino, sino la esencia que nos define
+                        en todo lo que hacemos.
+                    </p>
+                    <a href="#contact" class="btn btn--primary">Entra</a>
+                </div>
+
+                <figure class="excellence__image">
+                    <img src="./images/Imagen1-removebg-preview.png" alt="Logo de La Familia Gastro S.L." class="excellence__img" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Mission Vision Section -->
+        <section class="mission-vision container">
+            <h2 class="section-title">
+                Nuestra Misión y Visión
+                <span class="section-subtitle">La Familia Gastro S.L.</span>
+            </h2>
+
+            <div class="mission-vision__grid">
+                <article class="mission-vision__card">
+                    <h3 class="mission-vision__title">Misión</h3>
+                    <p class="mission-vision__description">
+                        Proveer soluciones gastronómicas listas para consumir que integren calidad, sabor, 
+                        practicidad y sostenibilidad, acercando la cocina gallega a los nuevos estilos de 
+                        vida urbanos y profesionales.
+                    </p>
+                </article>
+
+                <article class="mission-vision__card">
+                    <h3 class="mission-vision__title">Visión</h3>
+                    <p class="mission-vision__description">
+                        Ser el operador líder del noroeste peninsular en comidas preparadas con identidad 
+                        regional, escalando producción sin perder autenticidad, desarrollando I+D y 
+                        consolidando alianzas estratégicas.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="testimonials__container container">
+                <button class="testimonials__arrow testimonials__arrow--prev" id="before" aria-label="Testimonio anterior">
+                    <img src="./images/leftarrow.svg" alt="" aria-hidden="true">
+                </button>
+                
+                <div class="testimonials__content">
+                    <article class="testimonial testimonial--active" data-id="1">
+                        <div class="testimonial__text">
+                            <h2 class="section-title">
+                                Producto local y de temporada 
+                                <span class="section-subtitle">La Familia Gastro S.L.</span>
+                            </h2>
+                            <p class="testimonial__description">
+                                Garantizamos frescura y sabor en cada preparación.
+                            </p>
+                        </div>
+                        <figure class="testimonial__image">
+                            <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM.jpeg" alt="Productos frescos de temporada" class="testimonial__img" loading="lazy">
+                        </figure>
+                    </article>
+
+                    <article class="testimonial" data-id="2">
+                        <div class="testimonial__text">
+                            <h2 class="section-title">
+                                Adaptación al cliente
+                                <span class="section-subtitle">La Familia Gastro S.L.</span>
+                            </h2>
+                            <p class="testimonial__description">
+                                Soluciones personalizadas para empresas, residencias y más.
+                            </p>
+                        </div>
+                        <figure class="testimonial__image">
+                            <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (1).jpeg" alt="Servicio personalizado" class="testimonial__img" loading="lazy">
+                        </figure>
+                    </article>
+
+                    <article class="testimonial" data-id="3">
+                        <div class="testimonial__text">
+                            <h2 class="section-title">
+                                Velocidad de respuesta y eficiencia
+                                <span class="section-subtitle">La Familia Gastro S.L.</span>
+                            </h2>
+                            <p class="testimonial__description">
+                                Optimizamos cada proceso para un servicio ágil y confiable.
+                            </p>
+                        </div>
+                        <figure class="testimonial__image">
+                            <img src="./images/djim-loic-ft0-Xu4nTvA-unsplash.jpg" alt="Procesos optimizados" class="testimonial__img" loading="lazy">
+                        </figure>
+                    </article>
+
+                    <article class="testimonial" data-id="4">
+                        <div class="testimonial__text">
+                            <h2 class="section-title">
+                                Compromiso nutricional
+                                <span class="section-subtitle">La Familia Gastro S.L.</span>
+                            </h2>
+                            <p class="testimonial__description">
+                                Ofrecemos alimentos sin aditivos innecesarios, priorizando la salud.
+                            </p>
+                        </div>
+                        <figure class="testimonial__image">
+                            <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (2).jpeg" alt="Alimentos saludables" class="testimonial__img" loading="lazy">
+                        </figure>
+                    </article>
+
+                    <article class="testimonial" data-id="5">
+                        <div class="testimonial__text">
+                            <h2 class="section-title">
+                                Control logístico y reducción de costes
+                                <span class="section-subtitle">La Familia Gastro S.L.</span>
+                            </h2>
+                            <p class="testimonial__description">
+                                Maximizamos recursos para brindar calidad al mejor precio.
+                            </p>
+                        </div>
+                        <figure class="testimonial__image">
+                            <img src="./images/WhatsApp Image 2025-04-02 at 1.37.44 PM.jpeg" alt="Control logístico" class="testimonial__img" loading="lazy">
+                        </figure>
+                    </article>
+                </div>
+
+                <button class="testimonials__arrow testimonials__arrow--next" id="next" aria-label="Testimonio siguiente">
+                    <img src="./images/rigtharrow.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery container">
+            <h2 class="section-title">Descubre nuestro trabajo</h2>
+            <p class="section-description">Explora momentos especiales en nuestra galería de recuerdos.</p>
+
+            <article class="gallery__featured">
+                <a href="./galeria.html" class="gallery__link" aria-label="Ver galería completa">
+                    <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (3).jpeg" alt="Galería de trabajos" class="gallery__main-image" loading="lazy">
+                    <img src="./images/Imagen1-removebg-preview.png" alt="Logo La Familia Gastro" class="gallery__overlay-image" loading="lazy">
+                </a>
+            </article>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+            <div class="location__container container">
+                <h2 class="section-title">Nuestra ubicación</h2>
+                <p class="location__description">
+                    Visítanos en nuestra sede en A Coruña, donde la tradición y la innovación se unen 
+                    para ofrecerte lo mejor de la gastronomía gallega.
+                </p>
+
+                <div class="location__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.889364697911!2d-8.41050972416237!3d43.3332790720761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7dfffa1230bb%3A0x7151f4a0c188d187!2sR%C3%BAa%20Juan%20de%20la%20Cierva%2C%207%2C%2015008%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1721051547987!5m2!1ses!2ses"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de La Familia Gastro S.L. en A Coruña">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer" role="contentinfo">
+        <div class="footer__container container">
+            <form class="footer__form" role="form" aria-labelledby="contact-form-title">
+                <h2 id="contact-form-title" class="footer__title">Te contactamos</h2>
+                <div class="footer__inputs">
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        class="footer__input" 
+                        aria-label="Tu dirección de email"
+                        required
+                    >
+                    <button type="submit" class="footer__submit" aria-label="Enviar formulario">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer__bottom container">
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Síguenos en Facebook">
+                    <img src="./images/facebook.svg" class="footer__social-icon" alt="" aria-hidden="true">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Síguenos en Instagram">
+                    <img src="./images/insta.svg" class="footer__social-icon" alt="" aria-hidden="true">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Síguenos en Twitter">
+                    <img src="./images/X.svg" class="footer__social-icon" alt="" aria-hidden="true">
+                </a>
+            </div>
+
+            <p class="footer__copyright">
+                &copy; <span id="current-year">2024</span> La Familia Gastro S.L. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" aria-hidden="true">
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="./JS/main.js"></script>
+</body>
+</html>

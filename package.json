@@ -1,0 +1,73 @@
+{
+  "name": "la-familia-gastro-landing",
+  "version": "2.0.0",
+  "description": "Optimized and modern landing page for La Familia Gastro S.L.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node build.js serve",
+    "build": "node build.js build",
+    "clean": "node build.js clean",
+    "dev": "python -m http.server 8000",
+    "serve-python": "python -m http.server 8000",
+    "serve-php": "php -S localhost:8000",
+    "lint:html": "htmlhint *.html",
+    "lint:css": "stylelint CSS/*.css",
+    "lint:js": "eslint JS/*.js",
+    "test:accessibility": "pa11y index.html",
+    "test:performance": "lighthouse index.html --output=json --output-path=./lighthouse-report.json",
+    "optimize:images": "imagemin images/* --out-dir=images/optimized",
+    "validate": "npm run lint:html && npm run lint:css && npm run lint:js"
+  },
+  "keywords": [
+    "landing-page",
+    "gastronomy",
+    "food-service",
+    "galicia",
+    "responsive",
+    "accessibility",
+    "performance"
+  ],
+  "author": "La Familia Gastro S.L.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lafamiliagastro/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lafamiliagastro/landing-page/issues"
+  },
+  "homepage": "https://lafamiliagastro.com",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "htmlhint": "^1.1.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^30.0.0",
+    "pa11y": "^6.0.0",
+    "lighthouse": "^10.0.0",
+    "imagemin": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "mime-types": "^2.1.35"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run validate",
+      "pre-push": "npm run test:performance"
+    }
+  }
+} 
